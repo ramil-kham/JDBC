@@ -1,0 +1,98 @@
+###
+
+GET http://localhost:8080/books
+
+###
+
+GET http://localhost:8080/books/2
+
+###
+
+GET http://localhost:8080/books/search?name=Подросток&author=Достоевский
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Бородино",
+  "price": 180,
+  "quantity": 16,
+  "author": "Лермонтов",
+  "weight": 230
+
+}
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Анна Каренина",
+  "price": 500,
+  "quantity": 24,
+  "author": "Толстой",
+  "weight": 300
+
+}
+
+###
+
+DELETE http://localhost:8080/books/5
+
+###
+GET http://localhost:8080/customers
+
+###
+
+GET http://localhost:8080/customers/2
+
+###
+
+GET http://localhost:8080/customers/search?name=Иван
+
+###
+
+POST http://localhost:8080/customers
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Николай",
+  "email": "kolya@mail.ru",
+  "delivery_address": "Санкт-Петербург"
+
+
+}
+
+###
+
+POST http://localhost:8080/customers
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Анна",
+  "email": "anna@mail.ru",
+  "delivery_address": "Уфа"
+
+}
+
+###
+
+DELETE http://localhost:8080/customers/5
+
+###
+
+GET http://localhost:8080/orders
+
+###
+
+GET http://localhost:8080/orders/2
+
+###
+

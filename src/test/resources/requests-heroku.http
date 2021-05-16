@@ -1,0 +1,88 @@
+###
+
+GET https://new-web.herokuapp.com/books
+
+###
+
+GET https://new-web.herokuapp.com/books/3
+
+###
+
+GET https://new-web.herokuapp.com/books/search?name=Подросток&author=Достоевский
+
+###
+
+POST https://new-web.herokuapp.com/books
+Content-Type: application/json
+
+{
+  "id": 0,
+  "producer_id": 1,
+  "name": "Бородино",
+  "price": 180,
+  "author": "Лермонтов",
+  "weight": 230
+
+}
+
+###
+
+POST https://new-web.herokuapp.com/books
+Content-Type: application/json
+
+{
+  "id": 2,
+  "producer_id": 2,
+  "name": "Анна Каренина",
+  "price": 500,
+  "author": "Толстой",
+  "weight": 300
+
+}
+
+###
+
+DELETE https://new-web.herokuapp.com/books/5
+
+###
+GET https://new-web.herokuapp.com/customers
+
+###
+
+GET https://new-web.herokuapp.com/customers/2
+
+###
+
+GET https://new-web.herokuapp.com/customers/search?name=Иван
+
+###
+
+POST https://new-web.herokuapp.com/customers
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Николай",
+  "email": "kolya@mail.ru",
+  "delivery_address": "Санкт-Петербург"
+
+
+}
+
+###
+
+POST https://new-web.herokuapp.com/customers
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Анна",
+  "email": "anna@mail.ru",
+  "delivery_address": "Уфа"
+
+}
+
+###
+
+DELETE https://new-web.herokuapp.com/customers/5
+
