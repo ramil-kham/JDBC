@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tech.itpark.project.dto.OrderDto;
 import tech.itpark.project.manager.OrderManager;
 
+import java.sql.SQLException;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -17,13 +18,7 @@ public class OrderController {
     private final OrderManager manager;
 
     @GetMapping()
-    public List<OrderDto> getAll() {
+    public List<OrderDto> getAll() throws SQLException{
         return manager.getAll();
     }
-
-//    @GetMapping("/{id}")
-//    public OrderDto getById(@PathVariable long id) {
-//        return manager.getById(id);
-//    }
-
 }

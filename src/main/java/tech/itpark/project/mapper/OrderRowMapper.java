@@ -7,7 +7,7 @@ import tech.itpark.project.dto.OrderDto;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@Component
+//@Component
 
 public class OrderRowMapper implements RowMapper<OrderDto> {
     public OrderDto mapRow(ResultSet rs, int rowNum) throws SQLException {
@@ -15,8 +15,8 @@ public class OrderRowMapper implements RowMapper<OrderDto> {
                 rs.getLong("order_id"),
                 rs.getLong("customer_id"),
                 rs.getLong("book_id"),
-                rs.getInt("price"),
-                rs.getInt("weight")
+                rs.getInt("order_price"),
+                rs.getInt("order_weight")
         );
     }
 }

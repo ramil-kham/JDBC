@@ -7,26 +7,20 @@ import tech.itpark.project.dto.OrderDto;
 import tech.itpark.project.mapper.OrderRowMapper;
 
 import java.util.List;
+import java.util.Map;
 
 @RequiredArgsConstructor
 @Component
 
 public class OrderManager {
     private final NamedParameterJdbcTemplate template;
-    private final OrderRowMapper rowMapper;
-/*
-    public OrderDto getById(long id) {
-        return template.queryForObject(
-                "SELECT o.order_id, b.name FROM orders o JOIN books b ON o.book_id = b.id",
-                Map.of("id", id),
-                rowMapper
-        );
-    }*/
-    public List<OrderDto> getAll() {
+    private final OrderRowMapper rowMapper = new OrderRowMapper();
 
-        return template.query(
-                "SELECT o.order_id, b.name FROM orders o JOIN books b ON o.book_id = b.id",
+    public List<OrderDto> getAll() {
+        return template.query("SELECT o.order_id, o.customer_id, o.book_id, o.order_price, o.order_weight, b.name, b.author " +
+                        "FROM orders o JOIN books b " +
+                        "ON o.book_id = b.id",
                 rowMapper
-        );
+                        );
     }
 }
