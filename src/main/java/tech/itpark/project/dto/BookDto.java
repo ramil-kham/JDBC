@@ -2,9 +2,7 @@ package tech.itpark.project.dto;
 
 import lombok.Value;
 
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Data
+
 @Value
 public class BookDto {
     long id;

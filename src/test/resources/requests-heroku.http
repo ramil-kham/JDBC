@@ -1,18 +1,18 @@
 ###
 
-GET https://new-web.herokuapp.com/books
+GET https://jdbc-final.herokuapp.com/books
 
 ###
 
-GET https://new-web.herokuapp.com/books/3
+GET https://jdbc-final.herokuapp.com/books/3
 
 ###
 
-GET https://new-web.herokuapp.com/books/search?name=Подросток&author=Достоевский
+GET https://jdbc-final.herokuapp.com/books/search?name=Подросток&author=Достоевский
 
 ###
 
-POST https://new-web.herokuapp.com/books
+POST https://jdbc-final.herokuapp.com/books
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 
 ###
 
-POST https://new-web.herokuapp.com/books
+POST https://jdbc-final.herokuapp.com/books
 Content-Type: application/json
 
 {
@@ -42,22 +42,22 @@ Content-Type: application/json
 
 ###
 
-DELETE https://new-web.herokuapp.com/books/5
+DELETE https://jdbc-final.herokuapp.com/books/5
 
 ###
-GET https://new-web.herokuapp.com/customers
-
-###
-
-GET https://new-web.herokuapp.com/customers/2
+GET https://jdbc-final.herokuapp.com/customers
 
 ###
 
-GET https://new-web.herokuapp.com/customers/search?name=Иван
+GET https://jdbc-final.herokuapp.com/customers/2
 
 ###
 
-POST https://new-web.herokuapp.com/customers
+GET https://jdbc-final.herokuapp.com/customers/search?name=Иван
+
+###
+
+POST https://jdbc-final.herokuapp.com/customers
 Content-Type: application/json
 
 {
@@ -71,7 +71,7 @@ Content-Type: application/json
 
 ###
 
-POST https://new-web.herokuapp.com/customers
+POST https://jdbc-final.herokuapp.com/customers
 Content-Type: application/json
 
 {
@@ -84,15 +84,15 @@ Content-Type: application/json
 
 ###
 
-DELETE https://new-web.herokuapp.com/customers/5
+DELETE https://jdbc-final.herokuapp.com/customers/5
 
 ###
 
-GET https://new-web.herokuapp.com/orders
+GET https://jdbc-final.herokuapp.com/orders
 
 ###
 
-POST https://new-web.herokuapp.com/media
+POST https://jdbc-final.herokuapp.com/media
 Content-Type: multipart/form-data; boundary=WebAppBoundary
 
 --WebAppBoundary
